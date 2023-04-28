@@ -1,0 +1,333 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* estilos generales */
+
+header{
+    background-color: #f4c6b8;
+    border-style: solid;
+    margin-bottom: 5px;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Pompiere', cursive;
+    font-weight: bold;
+}
+.color-navbar{
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.color-navbar:hover{
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+}
+
+footer{
+    background-image: url(../img/Fondo-Footer.png);
+    background-size: contain;
+    display: grid;
+}
+
+footer ul{
+    display: grid;
+    grid-template-columns: 8fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    list-style: none;
+}
+
+footer ul li h2{
+    color: rgb(0, 0, 0);
+    background: #f4c6b8;
+    font-size: 20px;
+    display: inline-block;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Pompiere', cursive;
+    
+    
+
+}
+/* estilos del index*/
+
+.bienvenida{
+    text-align: center;
+    margin-bottom: 5rem;
+    text-decoration: underline;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Pompiere', cursive;
+}
+
+.portada-uno{
+    display:grid;
+    grid-template-rows: 0.6fr 0.4fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.portada-dos{
+    display:grid;
+    grid-template-rows: 0.6fr 0.4fr;
+    grid-template-columns: 1fr;
+    justify-items: center; 
+}
+
+.parrafos-portadas{
+    justify-self: center;
+    width: 80%;
+}
+
+.img-uno{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-dos{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+/*estilos haircare*/
+
+.h1-haircare{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 30px;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Pompiere', cursive;
+}
+
+.h2-haircare{
+    text-align: center;
+    margin-bottom: 35px;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Pompiere', cursive;
+}
+
+.contenedor-parrafos-haircare{
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 30px;
+}
+
+.contenedor-productos-hc{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(8, 1fr);
+    justify-items: center;
+    text-align: center;
+}
+
+.producto-hc{
+display: grid;
+justify-items: center;
+align-items: center;
+margin: 20px;
+}
+
+.img-hc{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*estilos intimates*/
+
+.h1-intimates{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 30px;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Pompiere', cursive;
+}
+
+.h2-intimates{
+    text-align: center;
+    margin-bottom: 35px;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Pompiere', cursive;
+}
+
+.contenedor-parrafos-intimates{
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 40px;
+}
+
+.contenedor-productos-intimates{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, 1fr);
+    justify-items: center;
+    text-align: center;
+}
+
+.producto-intimates{
+display: grid;
+justify-items: center;
+align-items: center;
+margin: 20px;
+}
+
+.img-intimates{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/*estilos nosotros*/
+
+.main-nosotros{
+    display: grid;
+    justify-items: center;
+}
+
+.h1-nosotros{
+    text-align: center;
+    margin-bottom: 25px;
+    text-decoration: underline;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Pompiere', cursive;
+}
+
+.h2-nosotros{
+    text-align: center;
+    margin-bottom: 35px;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Pompiere', cursive;
+}
+
+.contenedor-parrafos-nosotros{
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;   
+}
+
+.contenedor-img-nosotros{
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2,50%);
+}
+
+.img-nosotros{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+
+/*estilos contacto*/
+
+.main-contacto{
+    background-color: whitesmoke;
+    display: grid;
+    justify-items: center;
+}
+
+.h1-contacto{
+    text-align: center;
+    margin-bottom: 25px;
+    text-decoration: underline;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Pompiere', cursive;
+}
+
+.h2-contacto{
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Pompiere', cursive;
+}
+
+.contenedor-contacto{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    width: 80%;
+}
+
+.llamadas-contacto{
+    justify-items: center;
+    text-align: center;
+}
+
+.ig-contacto{
+    justify-content: center;
+    text-align: center;
+}
+
+.email-contacto{
+    justify-items: center;
+    text-align: center;
+    align-self: self-start;
+}
+
+.ubicacion-contacto{
+    justify-items: center;
+    text-align: center;
+}
+
+/*media queries*/
+
+/*media queries tablet*/
+
+@media screen and (min-width:600px){
+    .contenedor-contacto{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        justify-items: center;
+        align-items: center;   
+    }
+
+    .contenedor-productos-hc{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        justify-items: center;
+        align-items: center;  
+    }
+
+    .contenedor-productos-intimates{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;  
+    }
+
+}
+/*media queries desktop*/
+
+@media screen and (min-width:1024px){
+    .contenedor-portadas{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        width: 100%;
+    }
+
+    .contenedor-productos-hc{
+        display: grid;
+        grid-template-columns:repeat(3,33%);
+        grid-template-rows: repeat(3,33%);
+        justify-items: center;
+        justify-content: center;
+    }
+
+    .contenedor-productos-intimates{
+        display: grid;
+        grid-template-columns:repeat(3,33%);
+        grid-template-rows: repeat(2,50%);
+        justify-items: center;
+        justify-content: center;
+    }
+
+}
