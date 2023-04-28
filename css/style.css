@@ -27,18 +27,22 @@ p {
 
 /*estilos del footer*/
 footer {
-  background: linear-gradient(to right, #f4c6b8 50%, black 80%);
+  background: linear-gradient(to right, #f4c6b8, whitesmoke);
   display: grid; }
   footer ul {
     display: grid;
-    grid-template-columns: 8fr 0.5fr 0.5fr 0.5fr 0.5fr;
-    list-style: none; }
-    footer ul li h2 {
-      color: black;
-      font-size: 25px;
-      display: inline-block;
-      font-family: 'Anuphan', sans-serif;
-      font-family: 'Pompiere', cursive; }
+    grid-template-columns: 8fr 0.66fr 0.66fr 0.66fr;
+    list-style: none;
+    gap: 2px; }
+    footer ul li {
+      align-items: center;
+      display: grid; }
+      footer ul li p {
+        color: black;
+        font-size: 25px;
+        display: inline-block;
+        font-family: 'Anuphan', sans-serif;
+        font-family: 'Pompiere', cursive; }
 
 /*estilos del index*/
 .bienvenida {

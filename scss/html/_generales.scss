@@ -34,20 +34,28 @@ p{
 
 /*estilos del footer*/
 footer{ 
-    background:linear-gradient(to right, $color-fondo-rosa 50%, $color-negro 80%); 
+    background:linear-gradient(to right, $color-fondo-rosa, $color-blanco); 
     display: grid; 
 
     ul{ 
         display: grid; 
-        grid-template-columns: 8fr 0.5fr 0.5fr 0.5fr 0.5fr; 
-        list-style: none; 
+        grid-template-columns: 8fr 0.66fr 0.66fr 0.66fr ; 
+        list-style: none;
+        gap: 2px; 
 
-        li h2{ 
-            color: $color-negro;  
-            font-size: 25px; 
-            display: inline-block; 
-            @include fuente-principal;
-        } 
+        li{
+            align-items: center;
+            display: grid;
+
+            p{ 
+                color: $color-negro;  
+                font-size: 25px; 
+                display: inline-block; 
+                @include fuente-principal;
+            } 
+        }
+
+        
     }
 }
 
