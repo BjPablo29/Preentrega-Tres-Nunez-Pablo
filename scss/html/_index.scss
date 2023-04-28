@@ -35,6 +35,15 @@
     width: 60%; 
 } 
 
+/*media queries desktop*/ 
+
+@media screen and (min-width:1024px){ 
+    .contenedor-portadas{ 
+        display: grid; 
+        grid-template-columns: repeat(2,50%); 
+        width: 100%; 
+    }
+}
  
 
  

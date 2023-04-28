@@ -45,14 +45,27 @@
             height: 300px; 
             object-fit: cover; 
         } 
-    }
-    
-    
-    
+    }   
 } 
 
+/*media queries tablet*/ 
+@media screen and (min-width:600px){    
+    .contenedor-productos-intimates{ 
+        @include alinear-centro; 
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(3, 1fr);   
+    } 
+} 
 
+/*media queries desktop*/
 
+@media screen and (min-width:1024px){
+    .contenedor-productos-intimates{ 
+        @include alinear-centro; 
+        grid-template-columns:repeat(3,33%); 
+        grid-template-rows: repeat(2,50%);  
+    } 
+} 
  
  
 
