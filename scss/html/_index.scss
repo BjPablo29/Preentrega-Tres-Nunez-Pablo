@@ -1,0 +1,40 @@
+// import
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/*estilos del index*/
+
+.bienvenida{ 
+    text-align: center; 
+    margin-bottom: 5rem; 
+    text-decoration: underline;
+    @include fuente-principal;  
+} 
+
+.portada-uno{
+    @include alinear-centro;
+    @include disposicion-portadas;
+
+    
+    .img-uno{ 
+        @include img-responsive;
+    }
+} 
+
+.portada-dos{
+    @include alinear-centro;
+    @include disposicion-portadas; 
+    
+    .img-dos{ 
+        @include img-responsive; 
+    }
+} 
+
+.parrafos-portadas{ 
+    justify-self: center; 
+    width: 60%; 
+} 
+
+ 
+
+ 
