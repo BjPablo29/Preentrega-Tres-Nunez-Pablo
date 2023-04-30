@@ -10,19 +10,26 @@ header{
     background-color: $color-fondo-rosa; 
     border-style: solid; 
     margin-bottom: 10px;
-    @include fuente-principal; 
-
-    .color-navbar{ 
-        color:$color-negro;
-        font-size: 20px; 
-        font-weight: bold; 
-        text-decoration: underline; 
-    } 
+    @include fuente-principal;
     
-    .color-navbar:hover{ 
-        background-color: $color-negro; 
-        color: $color-blanco; 
-    } 
+    nav{
+        div{
+            ul{
+                li{
+                    .color-navbar{ 
+                        color:$color-negro;
+                        font-size: 20px; 
+                        font-weight: bold; 
+                        text-decoration: underline; 
+                    }
+                    .color-navbar:hover{ 
+                        background-color: $color-negro; 
+                        color: $color-blanco; 
+                    } 
+                }
+            }
+        }
+    }    
 }
 
 /*estilos para parrafos*/
@@ -53,9 +60,7 @@ footer{
                 display: inline-block; 
                 @include fuente-principal;
             } 
-        }
-
-        
+        }      
     }
 }
 

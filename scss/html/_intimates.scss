@@ -1,26 +1,13 @@
 // import
 @import "../utilidades/variables";
 @import "../utilidades/mixin";
-@import "../utilidades/extend";
-
 
 /*estilos intimates*/ 
-
-.h1-intimates{ 
-    @extend %disposicion-h1;
-} 
-
 .h2-intimates{ 
     text-align: center; 
     margin-bottom: 35px; 
     @include fuente-principal; 
 } 
-
- 
- .contenedor-parrafos-intimates{ 
-    @extend %contenedores-parrafos-ventas; 
-} 
-
 .contenedor-productos-intimates{ 
     @include alinear-centro; 
     grid-template-columns: 100%; 
@@ -48,7 +35,7 @@
     }   
 } 
 
-/*media queries tablet*/ 
+/*media queries tablet de intimates*/ 
 @media screen and (min-width:600px){    
     .contenedor-productos-intimates{ 
         @include alinear-centro; 
@@ -57,7 +44,7 @@
     } 
 } 
 
-/*media queries desktop*/
+/*media queries desktop de intimates*/
 
 @media screen and (min-width:1024px){
     .contenedor-productos-intimates{ 

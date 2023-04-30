@@ -12,12 +12,12 @@ header {
   margin-bottom: 10px;
   font-family: 'Anuphan', sans-serif;
   font-family: 'Pompiere', cursive; }
-  header .color-navbar {
+  header nav div ul li .color-navbar {
     color: black;
     font-size: 20px;
     font-weight: bold;
     text-decoration: underline; }
-  header .color-navbar:hover {
+  header nav div ul li .color-navbar:hover {
     background-color: black;
     color: whitesmoke; }
 
@@ -44,47 +44,7 @@ footer {
         font-family: 'Anuphan', sans-serif;
         font-family: 'Pompiere', cursive; }
 
-/*estilos del index*/
-.bienvenida {
-  text-align: center;
-  margin-bottom: 5rem;
-  text-decoration: underline;
-  font-family: 'Anuphan', sans-serif;
-  font-family: 'Pompiere', cursive; }
-
-.portada-uno {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  grid-template-rows: 0.6fr 0.4fr;
-  grid-template-columns: 1fr; }
-  .portada-uno .img-uno {
-    height: 100%;
-    width: 100%;
-    object-fit: cover; }
-
-.portada-dos {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  grid-template-rows: 0.6fr 0.4fr;
-  grid-template-columns: 1fr; }
-  .portada-dos .img-dos {
-    height: 100%;
-    width: 100%;
-    object-fit: cover; }
-
-.parrafos-portadas {
-  justify-self: center;
-  width: 60%; }
-
-/*media queries desktop*/
-@media screen and (min-width: 1024px) {
-  .contenedor-portadas {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    width: 100%; } }
-
+/*estilos generales en algunas paginas utilizando extend*/
 .h1-haircare, .h1-intimates, .main-nosotros .h1-nosotros {
   text-align: center;
   text-decoration: underline;
@@ -97,6 +57,49 @@ footer {
   margin-left: 20%;
   margin-right: 20%;
   margin-bottom: 40px; }
+
+/*estilos del index*/
+.bienvenida {
+  text-align: center;
+  margin-bottom: 5rem;
+  text-decoration: underline;
+  font-family: 'Anuphan', sans-serif;
+  font-family: 'Pompiere', cursive; }
+
+.contenedor-portadas .portada-uno {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 0.6fr 0.4fr;
+  grid-template-columns: 1fr; }
+  .contenedor-portadas .portada-uno a .img-uno {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+  .contenedor-portadas .portada-uno .parrafos-portadas {
+    justify-self: center;
+    width: 60%; }
+
+.contenedor-portadas .portada-dos {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 0.6fr 0.4fr;
+  grid-template-columns: 1fr; }
+  .contenedor-portadas .portada-dos a .img-dos {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+  .contenedor-portadas .portada-dos .parrafos-portadas {
+    justify-self: center;
+    width: 60%; }
+
+/*media queries desktop del index*/
+@media screen and (min-width: 1024px) {
+  .contenedor-portadas {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    width: 100%; } }
 
 /*estilos haircare*/
 .h2-haircare {
@@ -124,7 +127,7 @@ footer {
     width: 100%;
     object-fit: cover; }
 
-/*media queries tablet*/
+/*media queries tablet de haircare*/
 @media screen and (min-width: 600px) {
   .contenedor-productos-hc {
     display: grid;
@@ -133,7 +136,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr); } }
 
-/*media queries desktop*/
+/*media queries desktop de haircare*/
 @media screen and (min-width: 1024px) {
   .contenedor-productos-hc {
     display: grid;
@@ -141,19 +144,6 @@ footer {
     align-items: center;
     grid-template-columns: repeat(3, 33%);
     grid-template-rows: repeat(3, 33%); } }
-
-.h1-haircare, .h1-intimates, .main-nosotros .h1-nosotros {
-  text-align: center;
-  text-decoration: underline;
-  margin-bottom: 30px;
-  font-family: 'Anuphan', sans-serif;
-  font-family: 'Pompiere', cursive; }
-
-.contenedor-parrafos-haircare, .contenedor-parrafos-intimates {
-  text-align: center;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-bottom: 40px; }
 
 /*estilos intimates*/
 .h2-intimates {
@@ -184,7 +174,7 @@ footer {
       height: 300px;
       object-fit: cover; }
 
-/*media queries tablet*/
+/*media queries tablet de intimates*/
 @media screen and (min-width: 600px) {
   .contenedor-productos-intimates {
     display: grid;
@@ -193,7 +183,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr); } }
 
-/*media queries desktop*/
+/*media queries desktop de intimates*/
 @media screen and (min-width: 1024px) {
   .contenedor-productos-intimates {
     display: grid;
@@ -201,19 +191,6 @@ footer {
     align-items: center;
     grid-template-columns: repeat(3, 33%);
     grid-template-rows: repeat(2, 50%); } }
-
-.h1-haircare, .h1-intimates, .main-nosotros .h1-nosotros {
-  text-align: center;
-  text-decoration: underline;
-  margin-bottom: 30px;
-  font-family: 'Anuphan', sans-serif;
-  font-family: 'Pompiere', cursive; }
-
-.contenedor-parrafos-haircare, .contenedor-parrafos-intimates {
-  text-align: center;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-bottom: 40px; }
 
 /*estilos nosotros*/
 .main-nosotros {
@@ -229,7 +206,8 @@ footer {
     margin-left: 20%;
     margin-right: 20%; }
   .main-nosotros .contenedor-img-nosotros {
-    grid-template-columns: 100%;
+    display: grid;
+    grid-template-columns: 90%;
     grid-template-rows: repeat(2, 50%); }
     .main-nosotros .contenedor-img-nosotros .img-nosotros {
       height: 100%;
@@ -245,28 +223,28 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 10px; }
-  .contenedor-contacto h1 {
+  .contenedor-contacto div h1 {
     margin-bottom: 15px;
     font-size: 35px;
     font-family: calibri; }
-  .contenedor-contacto h2 {
+  .contenedor-contacto div h2 {
     margin-bottom: 15px;
-    font-size: 30px;
+    font-size: 27px;
     font-family: calibri; }
-  .contenedor-contacto div {
+  .contenedor-contacto div div {
     font-size: 17px;
     margin-bottom: 30px;
     color: black;
     font-weight: 700;
     font-family: calibri; }
-  .contenedor-contacto form .campo-texto {
+  .contenedor-contacto form fieldset .campo-texto {
     width: 100%;
     font-size: 17px;
     border: 1px solid;
     margin-bottom: 20px;
     border-radius: 3px;
     outline: 0px; }
-  .contenedor-contacto form .boton-enviar {
+  .contenedor-contacto form fieldset .boton-enviar {
     padding: 15px;
     font-size: 17px;
     border: none;
@@ -281,7 +259,7 @@ footer {
   align-items: center;
   font-family: calibri; }
 
-/*media queries desktop*/
+/*media queries desktop de contacto*/
 @media screen and (min-width: 1024px) {
   .contenedor-contacto {
     display: grid;

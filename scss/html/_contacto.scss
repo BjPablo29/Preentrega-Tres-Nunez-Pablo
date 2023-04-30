@@ -11,55 +11,57 @@
         display:flex;
         flex-direction: column;
         gap: 10px;
-        
-
-        h1{
-            margin-bottom: 15px;
-            font-size: 35px;
-            font-family: $fuente-secundaria;
-        }
-
-        h2{
-            margin-bottom: 15px;
-            font-size: 30px;
-            font-family: $fuente-secundaria;
-        }
-
         div{
-            font-size: 17px;
-            margin-bottom: 30px;
-            color: $color-negro;
-            font-weight: 700;
-            font-family: $fuente-secundaria;
-        }
-
-        form .campo-texto{
-            width: 100%;
-            font-size: 17px;
-            border: 1px solid;
-            margin-bottom: 20px;
-            border-radius: 3px;
-            outline: 0px;
-        }
-
-
-        form .boton-enviar{
-            padding: 15px;
-            font-size: 17px;
-            border: none;
-            background-color: $color-fondo-rosa;
-            color: $color-negro;
-        }
-    }
+            h1{
+                margin-bottom: 15px;
+                font-size: 35px;
+                font-family: $fuente-secundaria;
+            }
     
-    .ubicacion-contacto{
-        margin-top: 80px;
-        grid-template-rows: (1fr 3fr);
-        @include alinear-centro;
-        font-family: $fuente-secundaria;
-    }
+            h2{
+                margin-bottom: 15px;
+                font-size: 27px;
+                font-family: $fuente-secundaria;
+            }
+            div{
+                font-size: 17px;
+                margin-bottom: 30px;
+                color: $color-negro;
+                font-weight: 700;
+                font-family: $fuente-secundaria;
+            }
+        }
 
-    /*media queries desktop*/ 
+        form{
+            fieldset{
+                .campo-texto{
+                    width: 100%;
+                    font-size: 17px;
+                    border: 1px solid;
+                    margin-bottom: 20px;
+                    border-radius: 3px;
+                    outline: 0px;
+                }
+                .boton-enviar{
+                    padding: 15px;
+                    font-size: 17px;
+                    border: none;
+                    background-color: $color-fondo-rosa;
+                    color: $color-negro;
+                }
+            }
+        }
+    }
+    .ubicacion-contacto{
+            margin-top: 80px;
+            grid-template-rows: (1fr 3fr);
+            @include alinear-centro;
+            font-family: $fuente-secundaria;
+        } 
+    
+    
+
+    /*media queries desktop de contacto*/ 
 
 @media screen and (min-width:1024px){ 
     .contenedor-contacto{ 

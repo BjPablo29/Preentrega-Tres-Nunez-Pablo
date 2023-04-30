@@ -1,16 +1,11 @@
 // import
 @import "../utilidades/mixin";
-@import "../utilidades/extend";
 
 /*estilos nosotros*/ 
 
 .main-nosotros{ 
     display: grid; 
     justify-items: center;
-    
-    .h1-nosotros{ 
-        @extend %disposicion-h1; 
-    }
 
     .h2-nosotros{ 
         text-align: center; 
@@ -24,13 +19,14 @@
         margin-right: 20%;
     }
     
-    .contenedor-img-nosotros{ 
-        grid-template-columns: 100%; 
+    .contenedor-img-nosotros{
+        display: grid; 
+        grid-template-columns: 90%; 
         grid-template-rows: repeat(2,50%);
 
         .img-nosotros{ 
             @include img-responsive; 
-             margin-bottom: 5px; 
+             margin-bottom: 5px;
         } 
     } 
 } 

@@ -9,33 +9,38 @@
     margin-bottom: 5rem; 
     text-decoration: underline;
     @include fuente-principal;  
-} 
+}
 
-.portada-uno{
-    @include alinear-centro;
-    @include disposicion-portadas;
-
-    
-    .img-uno{ 
-        @include img-responsive;
+.contenedor-portadas{
+    .portada-uno{
+        @include alinear-centro;
+        @include disposicion-portadas;
+        a{
+            .img-uno{ 
+                @include img-responsive;
+            }
+        }
+        .parrafos-portadas{ 
+            justify-self: center; 
+            width: 60%; 
+        }   
     }
-} 
+    .portada-dos{
+        @include alinear-centro;
+        @include disposicion-portadas; 
+        a{
+            .img-dos{ 
+                @include img-responsive; 
+            }
+        }
+        .parrafos-portadas{ 
+            justify-self: center; 
+            width: 60%; 
+        }    
+    } 
+}
 
-.portada-dos{
-    @include alinear-centro;
-    @include disposicion-portadas; 
-    
-    .img-dos{ 
-        @include img-responsive; 
-    }
-} 
-
-.parrafos-portadas{ 
-    justify-self: center; 
-    width: 60%; 
-} 
-
-/*media queries desktop*/ 
+/*media queries desktop del index*/ 
 
 @media screen and (min-width:1024px){ 
     .contenedor-portadas{ 

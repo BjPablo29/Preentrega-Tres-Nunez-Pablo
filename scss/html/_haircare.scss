@@ -1,22 +1,13 @@
 // import
 @import "../utilidades/variables";
 @import "../utilidades/mixin";
-@import "../utilidades/extend";
+
 
 /*estilos haircare*/ 
-
-.h1-haircare{ 
-    @extend %disposicion-h1;
-} 
-
 .h2-haircare{ 
     text-align: center; 
     margin-bottom: 35px; 
     @include fuente-principal; 
-} 
-
-.contenedor-parrafos-haircare{ 
-    @extend %contenedores-parrafos-ventas;
 } 
 
 .contenedor-productos-hc{ 
@@ -38,7 +29,7 @@
         }  
 } 
 
-/*media queries tablet*/ 
+/*media queries tablet de haircare*/ 
 @media screen and (min-width:600px){    
     .contenedor-productos-hc{ 
         @include alinear-centro;
@@ -47,7 +38,7 @@
     }
 } 
 
-/*media queries desktop*/ 
+/*media queries desktop de haircare*/ 
 
 @media screen and (min-width:1024px){ 
     .contenedor-productos-hc{ 
